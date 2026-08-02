@@ -10,19 +10,14 @@
 
 ## 🧑‍🚀 About Me
 
-```python
-class ShivanshDubey:
-    def __init__(self):
-        self.role = "Full-Stack Developer & AI Builder"
-        self.code = ["Python", "JavaScript", "TypeScript", "Kotlin", "Dart", "Java"]
-        self.frameworks = ["React", "Next.js", "Node.js", "Electron", "Flutter", "Socket.IO"]
-        self.ai_stack = ["OpenAI", "Supabase", "LangChain", "ML Models"]
-        self.products = ["PostCraft AI", "team-chat-app", "snapquote", "vitalis"]
-        self.hobbies = ["Gaming", "3D Web", "Building cool stuff"]
+Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves turning ideas into real products. I build across the whole stack: Android apps, web platforms, Chrome extensions, and AI-powered tools.
 
-    def say_hi(self):
-        return "Building the future, one commit at a time 🚀"
-```
+- 🔭 **Currently building:** AI-powered products — PostCraft AI, team-chat-app, snapquote
+- 🌱 **Exploring:** AI agents, LLM apps, and Android development
+- 👨‍💻 **My stack:** Python · JavaScript/TypeScript · Kotlin · Dart · React · Next.js · Node.js · Flutter · Electron
+- 🤖 **AI toolkit:** OpenAI · Supabase · LangChain · ML models
+- 🎮 **Hobbies:** Gaming, 3D web experiences, building cool stuff
+- ⚡ **Motto:** Building the future, one commit at a time 🚀
 
 ## 🌐 Connect With Me
 
