@@ -4,7 +4,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6C5CE7&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Shivansh+%F0%9F%91%8B;Building+AI-powered+apps+and+products;Android+%C2%B7+Web+%C2%B7+Automation+%C2%B7+AI+Agents;Open+to+collabs+%26+exciting+projects)](https://git.io/typing-svg)
 
-[![Visitors](https://visitcount.itsvg.in/api?id=shivanshdueby7&label=Profile%20Views&color=6&icon=5&pretty=true)](https://github.com/shivanshdueby7)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=shivanshdueby7&label=Profile%20Views&countColor=%236C5CE7&style=flat)](https://github.com/shivanshdueby7)
 
 </div>
 
@@ -57,14 +57,6 @@ class ShivanshDubey:
 ![Streak](https://streak-stats.demolab.com/?user=shivanshdueby7&theme=radical&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shivanshdueby7&layout=compact&theme=radical&hide_border=true)
-
-</div>
-
-## 🏆 Achievements
-
-<div align="center">
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=shivanshdueby7&theme=radical&no-frame=true&row=1&column=6)
 
 </div>
 
