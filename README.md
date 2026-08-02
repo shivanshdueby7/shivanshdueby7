@@ -18,7 +18,7 @@ class ShivanshDubey:
         self.frameworks = ["React", "Next.js", "Node.js", "Electron", "Flutter", "Socket.IO"]
         self.ai_stack = ["OpenAI", "Supabase", "LangChain", "ML Models"]
         self.products = ["PostCraft AI", "team-chat-app", "snapquote", "vitalis"]
-        self.hobbies = ["Gaming", "3D Web", "Tesla Coils", "Building cool stuff"]
+        self.hobbies = ["Gaming", "3D Web", "Building cool stuff"]
 
     def say_hi(self):
         return "Building the future, one commit at a time 🚀"
