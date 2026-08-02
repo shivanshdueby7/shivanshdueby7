@@ -1,6 +1,6 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Shivansh%20Dubey&fontSize=60&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20AI%20Builder%20%7C%20Android%20%26%20Web%20Creator&descAlignY=58&animation=twinkling)
+![Header](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/header.svg)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6C5CE7&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Shivansh+%F0%9F%91%8B;Building+AI-powered+apps+and+products;Android+%C2%B7+Web+%C2%B7+Automation+%C2%B7+AI+Agents;Open+to+collabs+%26+exciting+projects)](https://git.io/typing-svg)
 
@@ -52,11 +52,11 @@ class ShivanshDubey:
 
 <div align="center">
 
-![Stats](https://github-readme-stats.vercel.app/api?username=shivanshdueby7&show_icons=true&theme=radical&hide_border=true&count_private=true)
+![Stats](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/metrics.svg)
 
 ![Streak](https://streak-stats.demolab.com/?user=shivanshdueby7&theme=radical&hide_border=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shivanshdueby7&layout=compact&theme=radical&hide_border=true)
+![Top Languages](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/top_languages.svg)
 
 </div>
 
@@ -88,7 +88,7 @@ class ShivanshDubey:
 
 <div align="center">
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer)
+![Footer](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/footer.svg)
 
 **⭐ From [shivanshdueby7](https://github.com/shivanshdueby7) — thanks for visiting!**
 

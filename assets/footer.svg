@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="100" viewBox="0 0 1200 100">
+  <defs>
+    <linearGradient id="fgbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a0533"/>
+      <stop offset="50%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#00d2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="100" fill="url(#fgbg)"/>
+  <path d="M0 0 Q 300 40 600 10 T 1200 20 L 1200 100 L 0 100 Z" fill="#0d0221" opacity="0.5"/>
+  <text x="600" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">⭐ Thanks for visiting! — Shivansh Dubey</text>
+</svg>
