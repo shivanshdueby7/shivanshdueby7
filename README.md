@@ -49,16 +49,6 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 🌟 Star History & Stargazers
-
-<div align="center">
-
-![Stars](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/stars.svg)
-
-</div>
-
-![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
-
 ## 🏙️ GitHub Skyline (3D City from Commits)
 
 <div align="center">
