@@ -10,16 +10,16 @@
 
 Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves turning ideas into real products. I build across the whole stack: Android apps, web platforms, Chrome extensions, and AI-powered tools.
 
-- 🔭 **Currently building:** AI-powered products — PostCraft AI, team-chat-app, snapquote
-- 🌱 **Exploring:** AI agents, LLM apps, and Android development
-- 👨‍💻 **My stack:** Python · JavaScript/TypeScript · Kotlin · Dart · React · Next.js · Node.js · Flutter · Electron
-- 🤖 **AI toolkit:** OpenAI · Supabase · LangChain · ML models
-- 🎮 **Hobbies:** Gaming, 3D web experiences, building cool stuff
-- ⚡ **Motto:** Building the future, one commit at a time 🚀
+-  **Currently building:** AI-powered products — PostCraft AI, team-chat-app, snapquote
+-  **Exploring:** AI agents, LLM apps, and Android development
+-  **My stack:** Python · JavaScript/TypeScript · Kotlin · Dart · React · Next.js · Node.js · Flutter · Electron
+-  **AI toolkit:** OpenAI · Supabase · LangChain · ML models
+-  **Hobbies:** Gaming, 3D web experiences, building cool stuff
+-  **Motto:** Building the future, one commit at a time 🚀
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 🌐 Connect With Me
+##  Connect With Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shivansh-dubey-7aaa392a3)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/shiivvansh/)
@@ -34,9 +34,9 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 📌 Featured Projects
+## Featured Projects
 
-| 🚀 Project | 📝 Description | 🔗 Repo |
+| Project | Description |  Repo |
 |---|---|---|
 | **PostCraft AI** | Chrome extension that writes viral LinkedIn posts in 10s with AI | [postcraft-ai](https://github.com/shivanshdueby7/postcraft-ai) |
 | **team-chat-app** | Real-time AI team chat platform (Express + Socket.IO) | [team-chat-app](https://github.com/shivanshdueby7/team-chat-app) |
@@ -89,7 +89,7 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 📈 Contribution Activity Graph
+##  Contribution Activity Graph
 
 <div align="center">
 
@@ -99,7 +99,7 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 💬 Random Dev Quote
+##  Random Dev Quote
 
 <div align="center">
 
