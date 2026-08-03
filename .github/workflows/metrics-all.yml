@@ -1,4 +1,4 @@
-name: Generate All Metrics & Animations
+name: Generate Metrics
 
 on:
   schedule:
@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  metrics-classic:
+  metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -55,40 +55,13 @@ jobs:
           plugin_lines_sections: base, repositories
           plugin_lines_history_limit: 2
           plugin_licenses: yes
-          plugin_licenses_threshold: 1
+          plugin_licenses_setup: yes
+          plugin_licenses_ratio: yes
+          plugin_licenses_legal: yes
           plugin_code: yes
           plugin_code_loaded: 1
-          plugin_calendar: yes
-          plugin_calendar_duration: full-year
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
 
-  metrics-languages:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          filename: languages.svg
-          template: classic
-          config_timezone: Asia/Kolkata
-          config_display: large
-          config_animations: yes
-          config_base64: yes
-          config_output: svg
-          base: ""
-          plugin_languages: yes
-          plugin_languages_details: percentage, bytes-size, lines-size
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_indepth: yes
-          plugin_languages_indepth_custom: yes
-          plugin_languages_limit: 12
-          plugin_languages_threshold: 1%
-          plugin_languages_colors: "{python: '#FF6B3D', javascript: '#FFB396', typescript: '#FF8C66', kotlin: '#E63946', dart: '#FF4444', java: '#800020', go: '#FF6B3D', rust: '#E63946', cpp: '#800020', html: '#FFB396', css: '#FF8C66', shell: '#FF4444'}"
-
-  metrics-stars:
+  stars:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -109,9 +82,8 @@ jobs:
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
           plugin_stargazers_charts_type: graph
-          plugin_stargazers_worldmap: yes
 
-  metrics-skyline:
+  skyline:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -130,26 +102,7 @@ jobs:
           plugin_skyline: yes
           plugin_skyline_year: 2024
 
-  metrics-isocalendar:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          filename: isocalendar.svg
-          template: classic
-          config_timezone: Asia/Kolkata
-          config_display: large
-          config_animations: yes
-          config_base64: yes
-          config_output: svg
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-  metrics-activity:
+  activity:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -176,33 +129,22 @@ jobs:
           plugin_lines: yes
           plugin_lines_history_limit: 2
 
-  github-motion:
+  snake:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Generate all motion animations
-        uses: AcTePuKc/github-motion@main
+      - uses: Platane/snk@v3
         with:
-          username: shivanshdueby7
-          animation: snake,matrix,wave,glow,pulsar,rain,grow,flip,spark
-          shape: square,circle,heart,diamond
-          theme: unicorn,nightowl,dracula,bulgaria,tokyonight,candy,dark-bg,bulgaria-dark,india
-          year: 2024
-          output: dist/motion.svg
-
-  commit-all:
-    needs: [metrics-classic, metrics-languages, metrics-stars, metrics-skyline, metrics-isocalendar, metrics-activity, github-motion]
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: Commit all generated SVGs
+          github_user_name: shivanshdueby7
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add *.svg dist/*.svg 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "chore: update all metrics & animations"
+          git add dist
+          git diff --cached --quiet || git commit -m "chore: update snake animation"
           git push

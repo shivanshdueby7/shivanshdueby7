@@ -10,12 +10,12 @@
 
 Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves turning ideas into real products. I build across the whole stack: Android apps, web platforms, Chrome extensions, and AI-powered tools.
 
--  **Currently building:** AI-powered products — PostCraft AI, team-chat-app, snapquote
--  **Exploring:** AI agents, LLM apps, and Android development
--  **My stack:** Python · JavaScript/TypeScript · Kotlin · Dart · React · Next.js · Node.js · Flutter · Electron
--  **AI toolkit:** OpenAI · Supabase · LangChain · ML models
--  **Hobbies:** Gaming, 3D web experiences, building cool stuff
-  
+- 🔭 **Currently building:** AI-powered products — PostCraft AI, team-chat-app, snapquote
+- 🌱 **Exploring:** AI agents, LLM apps, and Android development
+- 👨‍💻 **My stack:** Python · JavaScript/TypeScript · Kotlin · Dart · React · Next.js · Node.js · Flutter · Electron
+- 🤖 **AI toolkit:** OpenAI · Supabase · LangChain · ML models
+- 🎮 **Hobbies:** Gaming, 3D web experiences, building cool stuff
+- ⚡ **Motto:** Building the future, one commit at a time 🚀
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
@@ -49,21 +49,11 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 📊 GitHub Stats & Metrics
+## 📊 GitHub Stats
 
 <div align="center">
 
 ![Metrics](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/metrics.svg)
-
-</div>
-
-![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
-
-## 🈷️ Top Languages
-
-<div align="center">
-
-![Languages](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/languages.svg)
 
 </div>
 
@@ -89,16 +79,6 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 📅 Isometric Contribution Calendar
-
-<div align="center">
-
-![Isometric Calendar](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/isocalendar.svg)
-
-</div>
-
-![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
-
 ## 📈 Activity & Habits
 
 <div align="center">
@@ -109,37 +89,11 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 🐍 Contribution Animations (Multiple Styles)
+## 🐍 Snake Eating My Contributions
 
 <div align="center">
 
-### Snake Animation
-![Motion Snake](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-snake.svg)
-
-### Matrix Rain
-![Motion Matrix](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-matrix.svg)
-
-### Wave Animation
-![Motion Wave](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-wave.svg)
-
-### Glow Diamonds
-![Motion Glow](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-glow.svg)
-
-### Pulsar
-![Motion Pulsar](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-pulsar.svg)
-
-### Rain
-![Motion Rain](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-rain.svg)
-
-</div>
-
-![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
-
-## 🏆 GitHub Achievements & Trophies
-
-<div align="center">
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=shivanshdueby7&theme=radical&no-frame=true&row=2&column=4)
+![Snake animation](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/github-snake-dark.svg)
 
 </div>
 
@@ -175,7 +129,7 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 🎮 Fun: Pac-Man on Your Contributions
+## 🎮 Pac-Man on Your Contributions
 
 <div align="center">
 
