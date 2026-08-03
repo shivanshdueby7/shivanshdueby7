@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commit Dash - Shivansh's Game</title>
+<style>
+  :root {
+    --bg: #2a0f12;
+    --peach: #ffb396;
+    --peach2: #ff8c66;
+    --peach3: #ff6b3d;
+    --maroon: #670e10;
+    --cream: #ffe5b4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--cream);
+  }
+  h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    background: linear-gradient(90deg, var(--peach), var(--peach3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #hud {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  #hud span b { color: var(--peach); }
+  canvas {
+    border: 2px solid var(--maroon);
+    border-radius: 12px;
+    background: linear-gradient(180deg, #3a1520 0%, #2a0f12 60%, #1c0a0c 100%);
+    box-shadow: 0 0 30px rgba(255, 107, 61, 0.25);
+    max-width: 95vw;
+    touch-action: none;
+  }
+  #controls {
+    margin: 12px 0 20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--peach);
+    opacity: 0.9;
+  }
+  .key {
+    background: var(--maroon);
+    border: 1px solid var(--peach3);
+    border-radius: 5px;
+    padding: 2px 8px;
+    margin: 0 3px;
+  }
+  #gameover {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 10, 12, 0.75);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  #wrap { position: relative; }
+  #gameover.show { display: flex; }
+  #gameover h2 { color: var(--peach3); font-size: 34px; }
+  #gameover p { color: var(--cream); font-size: 16px; }
+  button {
+    background: linear-gradient(90deg, var(--peach3), var(--maroon));
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  button:hover { transform: scale(1.06); }
+  footer {
+    margin-top: auto;
+    padding: 12px;
+    font-size: 13px;
+    opacity: 0.6;
+    color: var(--peach);
+  }
+  footer a { color: var(--peach2); }
+</style>
+</head>
+<body>
+  <h1>Commit Dash</h1>
+  <div id="hud">
+    <span>Score <b id="score">0</b></span>
+    <span>High <b id="high">0</b></span>
+    <span>Speed <b id="spd">1.0x</b></span>
+  </div>
+  <div id="wrap">
+    <canvas id="game" width="720" height="320"></canvas>
+    <div id="gameover">
+      <h2>Game Over!</h2>
+      <p>Final score: <b id="final"></b></p>
+      <button id="restart">Play Again</button>
+    </div>
+  </div>
+  <div id="controls">
+    <span class="key">SPACE</span> / <span class="key">CLICK</span> to jump &nbsp;|&nbsp; collect <span style="color:#ffe5b4">★ commits</span>, avoid <span style="color:#ff6b3d">● bugs</span>
+  </div>
+  <footer>Made by <a href="https://github.com/shivanshdueby7">Shivansh Dubey</a> &middot; built with pure Canvas JS</footer>
+
+<script>
+const c = document.getElementById('game');
+const ctx = c.getContext('2d');
+const scoreEl = document.getElementById('score');
+const highEl = document.getElementById('high');
+const spdEl = document.getElementById('spd');
+const gameoverEl = document.getElementById('gameover');
+const finalEl = document.getElementById('final');
+
+let high = parseInt(localStorage.getItem('commitDashHigh') || '0');
+highEl.textContent = high;
+
+const GROUND = 270;
+let score, speed, t, gameOver;
+let player, obstacles, commits;
+
+function reset() {
+  score = 0; speed = 1; t = 0; gameOver = false;
+  player = { x: 90, y: GROUND, w: 26, h: 30, vy: 0, grounded: true, frame: 0 };
+  obstacles = [];
+  commits = [];
+  gameoverEl.classList.remove('show');
+  c.style.pointerEvents = '';
+}
+
+function jump() {
+  if (!player.grounded && player.vy < 0) return;
+  player.vy = -10.2;
+  player.grounded = false;
+}
+
+function spawn() {
+  const r = Math.random();
+  if (r < 0.42) {
+    obstacles.push({ x: c.width + 20, w: 14, h: 26, type: 'bug' });
+  } else if (r < 0.8) {
+    commits.push({ x: c.width + 20, y: GROUND - 20 - Math.random() * 90, r: 8, taken: false });
+  } else {
+    obstacles.push({ x: c.width + 20, w: 22, h: 40, type: 'tall' });
+  }
+}
+
+function update(dt) {
+  if (gameOver) return;
+  t += dt;
+  speed = 1 + score * 0.02;
+  spdEl.textContent = speed.toFixed(1) + 'x';
+
+  player.vy += 0.55;
+  player.y += player.vy;
+  if (player.y >= GROUND) { player.y = GROUND; player.vy = 0; player.grounded = true; }
+  player.frame += dt * 10;
+
+  if (Math.random() < dt * 0.09 * speed) spawn();
+
+  for (let i = obstacles.length - 1; i >= 0; i--) {
+    const o = obstacles[i];
+    o.x -= 3.4 * speed;
+    if (o.x + o.w < -30) { obstacles.splice(i, 1); score++; continue; }
+    if (rectHit(player, o)) { endGame(); return; }
+  }
+  for (let i = commits.length - 1; i >= 0; i--) {
+    const m = commits[i];
+    m.x -= 3.4 * speed;
+    m.y += Math.sin(t * 3 + m.x * 0.02) * 0.3;
+    if (m.x + m.r < -30) { commits.splice(i, 1); continue; }
+    if (circleHit(player, m)) { m.taken = true; score += 5; commits.splice(i, 1); }
+  }
+  scoreEl.textContent = Math.floor(score);
+}
+
+function rectHit(a, o) {
+  return a.x < o.x + o.w && a.x + a.w > o.x && a.y < GROUND + 4 && a.y + a.h > GROUND - o.h;
+}
+
+function circleHit(a, m) {
+  const cx = a.x + a.w / 2, cy = a.y + a.h / 2;
+  const dx = cx - m.x, dy = cy - m.y;
+  return Math.sqrt(dx * dx + dy * dy) < m.r + a.w / 2;
+}
+
+function endGame() {
+  gameOver = true;
+  finalEl.textContent = Math.floor(score);
+  if (Math.floor(score) > high) {
+    high = Math.floor(score);
+    localStorage.setItem('commitDashHigh', high);
+    highEl.textContent = high;
+  }
+  gameoverEl.classList.add('show');
+  c.style.pointerEvents = 'none';
+}
+
+function drawPlayer() {
+  const b = player;
+  ctx.save();
+  ctx.translate(b.x + b.w / 2, b.y + b.h / 2);
+  const s = b.grounded ? 1 : 0.92;
+  ctx.scale(s, s);
+  // body
+  const grad = ctx.createLinearGradient(0, -15, 0, 15);
+  grad.addColorStop(0, '#ffb396');
+  grad.addColorStop(1, '#ff8c66');
+  ctx.fillStyle = grad;
+  roundRect(ctx, -13, -15, 26, 30, 8);
+  ctx.fill();
+  // face
+  ctx.fillStyle = '#670e10';
+  ctx.beginPath();
+  ctx.arc(-4, -4, 2.6, 0, Math.PI * 2);
+  ctx.arc(4, -4, 2.6, 0, Math.PI * 2);
+  ctx.fill();
+  // smile
+  ctx.strokeStyle = '#670e10';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(0, 0, 5, 0.15 * Math.PI, 0.85 * Math.PI);
+  ctx.stroke();
+  // legs
+  ctx.strokeStyle = '#ff6b3d';
+  ctx.lineWidth = 4;
+  ctx.lineCap = 'round';
+  const kick = b.grounded ? Math.sin(b.frame) * 4 : 2;
+  ctx.beginPath();
+  ctx.moveTo(-6, 14); ctx.lineTo(-10 + kick, 22);
+  ctx.moveTo(6, 14); ctx.lineTo(10 - kick, 22);
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawObstacles() {
+  for (const o of obstacles) {
+    ctx.fillStyle = o.type === 'bug' ? '#ff6b3d' : '#9c2b2e';
+    roundRect(ctx, o.x, GROUND - o.h, o.w, o.h, 4);
+    ctx.fill();
+    if (o.type === 'bug') {
+      ctx.fillStyle = '#670e10';
+      ctx.beginPath();
+      ctx.arc(o.x + 4, GROUND - o.h + 4, 1.6, 0, Math.PI * 2);
+      ctx.arc(o.x + o.w - 4, GROUND - o.h + 4, 1.6, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+}
+
+function drawCommits() {
+  for (const m of commits) {
+    ctx.save();
+    ctx.translate(m.x, m.y);
+    ctx.rotate(t * 1.2);
+    ctx.fillStyle = '#ffe5b4';
+    ctx.strokeStyle = '#ff8c66';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    for (let i = 0; i < 5; i++) {
+      const ang = -Math.PI / 2 + i * (Math.PI * 2 / 5);
+      const rr = (i % 2 === 0) ? m.r : m.r * 0.45;
+      ctx.lineTo(Math.cos(ang) * rr, Math.sin(ang) * rr);
+    }
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+function drawGround() {
+  ctx.fillStyle = '#1c0a0c';
+  ctx.fillRect(0, GROUND, c.width, c.height - GROUND);
+  ctx.strokeStyle = '#670e10';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(0, GROUND); ctx.lineTo(c.width, GROUND);
+  ctx.stroke();
+  ctx.fillStyle = 'rgba(255, 182, 150, 0.25)';
+  for (let x = -(t * 30 * speed % 40); x < c.width; x += 40) {
+    ctx.fillRect(x, GROUND + 6, 20, 3);
+  }
+}
+
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+
+let last = performance.now();
+function loop(now) {
+  const dt = Math.min((now - last) / 16.7, 3);
+  last = now;
+  ctx.clearRect(0, 0, c.width, c.height);
+  drawGround();
+  if (!gameOver) update(dt);
+  drawCommits();
+  drawObstacles();
+  drawPlayer();
+  requestAnimationFrame(loop);
+}
+
+window.addEventListener('keydown', (e) => {
+  if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'KeyW') {
+    e.preventDefault();
+    if (gameOver) reset(); else jump();
+  }
+});
+c.addEventListener('pointerdown', () => {
+  if (gameOver) reset(); else jump();
+});
+document.getElementById('restart').addEventListener('click', reset);
+
+reset();
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>
