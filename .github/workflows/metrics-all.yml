@@ -84,6 +84,7 @@ jobs:
               "wait": 4,
               "hide": ".github-corner, .footer-link, .buttons-options, .mobile-rotate, .display-info span:first-child"
             }
+          verify: no
           delay: 120
 
   snake:
