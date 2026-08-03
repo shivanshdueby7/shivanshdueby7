@@ -1,12 +1,10 @@
-<div align="center">
+![Header](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/header-peach.svg)
 
-![Header](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/header.svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&pause=1000&color=FF6B3D&center=true&vCenter=true&random=false&width=700&lines=Hey+there!+I'm+Shivansh+%F0%9F%91%8B;Full-Stack+Developer+%7C+AI+Builder;Python+%C2%B7+TypeScript+%C2%B7+Kotlin+%C2%B7+Flutter;Building+the+future+one+commit+at+a+time+%F0%9F%9A%80)](https://git.io/typing-svg)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6C5CE7&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Shivansh+%F0%9F%91%8B;Building+AI-powered+apps+and+products;Android+%C2%B7+Web+%C2%B7+Automation+%C2%B7+AI+Agents;Open+to+collabs+%26+exciting+projects)](https://git.io/typing-svg)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=shivanshdueby7&label=Profile%20Views&countColor=%23FF6B3D&style=for-the-badge)](https://github.com/shivanshdueby7)
 
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=shivanshdueby7&label=Profile%20Views&countColor=%236C5CE7&style=flat)](https://github.com/shivanshdueby7)
-
-</div>
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
 ## 🧑‍🚀 About Me
 
@@ -19,6 +17,8 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 -  **Hobbies:** Gaming, 3D web experiences, building cool stuff
   
 
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
 ## 🌐 Connect With Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shivansh-dubey-7aaa392a3)
@@ -26,9 +26,13 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shivanshdueby7)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shivanshdubey737@gmail.com)
 
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
 ## 🛠️ Tech Stack
 
-![Skills](https://skillicons.dev/icons?i=python,js,ts,kotlin,dart,java,nodejs,react,nextjs,express,electron,flutter,androidstudio,html,css,tailwind,vite,supabase,firebase,openai,git,github,vercel,linux&theme=dark)
+![Skills](https://skillicons.dev/icons?i=python,js,ts,kotlin,dart,java,nodejs,react,nextjs,express,electron,flutter,androidstudio,html,css,tailwind,vite,supabase,firebase,openai,git,github,vercel,linux,docker&theme=dark&perline=12)
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
 ## 📌 Featured Projects
 
@@ -43,33 +47,123 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 *More projects being published every day — stay tuned! 🎯*
 
-## 📊 GitHub Stats
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 📊 GitHub Stats & Metrics
 
 <div align="center">
 
-![Stats](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/metrics.svg)
-
-![Streak](https://streak-stats.demolab.com/?user=shivanshdueby7&theme=radical&hide_border=true)
-
-![Top Languages](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/top_languages.svg)
+![Metrics](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/metrics.svg)
 
 </div>
 
-## 📈 Contribution Activity
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 🈷️ Top Languages
 
 <div align="center">
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shivanshdueby7&theme=radical&hide_border=true)
+![Languages](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/languages.svg)
 
 </div>
 
-## 🐍 Snake Eating My Contributions
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 🌟 Star History & Stargazers
 
 <div align="center">
 
-![Snake animation](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/github-snake-dark.svg)
+![Stars](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/stars.svg)
 
 </div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 🏙️ GitHub Skyline (3D City from Commits)
+
+<div align="center">
+
+![Skyline](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/skyline.svg)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 📅 Isometric Contribution Calendar
+
+<div align="center">
+
+![Isometric Calendar](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/isocalendar.svg)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 📈 Activity & Habits
+
+<div align="center">
+
+![Activity](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/activity.svg)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 🐍 Contribution Animations (Multiple Styles)
+
+<div align="center">
+
+### Snake Animation
+![Motion Snake](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-snake.svg)
+
+### Matrix Rain
+![Motion Matrix](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-matrix.svg)
+
+### Wave Animation
+![Motion Wave](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-wave.svg)
+
+### Glow Diamonds
+![Motion Glow](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-glow.svg)
+
+### Pulsar
+![Motion Pulsar](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-pulsar.svg)
+
+### Rain
+![Motion Rain](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/dist/motion-rain.svg)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 🏆 GitHub Achievements & Trophies
+
+<div align="center">
+
+![Trophies](https://github-profile-trophy.vercel.app/?username=shivanshdueby7&theme=radical&no-frame=true&row=2&column=4)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 🔥 Streak Stats
+
+<div align="center">
+
+![Streak](https://streak-stats.demolab.com/?user=shivanshdueby7&theme=radical&hide_border=true&fire=FF6B3D&ring=FF8C66&currStreakLabel=FFB396)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 📈 Contribution Activity Graph
+
+<div align="center">
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shivanshdueby7&theme=radical&hide_border=true&color=FF6B3D&bg_color=0D1117)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
 ## 💬 Random Dev Quote
 
@@ -79,12 +173,14 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 </div>
 
----
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
+## 🎮 Fun: Pac-Man on Your Contributions
 
 <div align="center">
 
-![Footer](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/footer.svg)
-
-**⭐ From [shivanshdueby7](https://github.com/shivanshdueby7) — thanks for visiting!**
+![Pac-Man](https://gh-motion-card.vercel.app/api/github-motion?username=shivanshdueby7&animation=pacman&theme=unicorn&shape=circle&hide_rank=true)
 
 </div>
+
+![Footer](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/footer-peach.svg)
