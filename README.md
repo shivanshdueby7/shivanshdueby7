@@ -69,6 +69,18 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
+## 🕹️ Play Commit Dash!
+
+<div align="center">
+
+A little game I built — jump over bugs, collect commits, chase the high score! 🚀
+
+[![Play Commit Dash](https://img.shields.io/badge/▶%20Play%20Commit%20Dash-FF6B3D?style=for-the-badge&logo=gamepad&logoColor=white)](https://shivanshdueby7.github.io/shivanshdueby7/game/)
+
+</div>
+
+![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
+
 ## 🔥 Streak Stats
 
 <div align="center">
