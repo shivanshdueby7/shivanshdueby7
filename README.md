@@ -49,11 +49,11 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 🏙️ GitHub Skyline (3D City from Commits)
+## 🗺️ 3D Contribution Graph
 
 <div align="center">
 
-![Skyline](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/skyline.svg)
+![3D Contributions](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/profile-3d-contrib/profile-night-rainbow.svg)
 
 </div>
 
