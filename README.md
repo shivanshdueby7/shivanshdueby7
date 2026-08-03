@@ -49,16 +49,6 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 
 ![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Metrics](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/metrics.svg)
-
-</div>
-
-![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
-
 ## 🌟 Star History & Stargazers
 
 <div align="center">
@@ -74,16 +64,6 @@ Hey! I'm **Shivansh Dubey** — a full-stack developer & AI builder who loves tu
 <div align="center">
 
 ![Skyline](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/skyline.svg)
-
-</div>
-
-![Divider](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/assets/divider-peach.svg)
-
-## 📈 Activity & Habits
-
-<div align="center">
-
-![Activity](https://raw.githubusercontent.com/shivanshdueby7/shivanshdueby7/master/activity.svg)
 
 </div>
 

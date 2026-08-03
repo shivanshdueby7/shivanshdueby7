@@ -52,7 +52,7 @@
     <animate attributeName="r" values="60;80;60" dur="5s" repeatCount="indefinite"/>
   </circle>
   <text x="600" y="115" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="64" font-weight="800" fill="url(#textGradient)" text-anchor="middle" filter="url(#textGlow)">Shivansh Dubey</text>
-  <text x="600" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="26" fill="#FFB396" text-anchor="middle" opacity="0.95">Full-Stack Developer · AI Builder · Android & Web Creator</text>
+  <text x="600" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="26" fill="#FFB396" text-anchor="middle" opacity="0.95">Full-Stack Developer · AI Builder · Android &amp; Web Creator</text>
   <text x="600" y="210" font-family="JetBrains Mono, Consolas, monospace" font-size="18" fill="#FF8C66" text-anchor="middle" opacity="0.8">Python · TypeScript · Kotlin · React · Next.js · Flutter · AI/ML</text>
   <g transform="translate(600, 245)">
     <rect x="-120" y="-12" width="240" height="4" rx="2" fill="#8B0000" opacity="0.3"/>

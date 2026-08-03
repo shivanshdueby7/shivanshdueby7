@@ -33,10 +33,6 @@ jobs:
           plugin_introduction_title: yes
           plugin_followup: yes
           plugin_followup_sections: issues, pull-requests
-          plugin_habits: yes
-          plugin_habits_days: 30
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
           plugin_notable: yes
           plugin_notable_repositories_limit: 5
           plugin_people: yes
@@ -101,33 +97,9 @@ jobs:
           base: ""
           plugin_skyline: yes
           plugin_skyline_year: 2024
-
-  activity:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          filename: activity.svg
-          template: classic
-          config_timezone: Asia/Kolkata
-          config_display: large
-          config_animations: yes
-          config_base64: yes
-          config_output: svg
-          base: ""
-          plugin_activity: yes
-          plugin_activity_limit: 10
-          plugin_activity_days: 30
-          plugin_activity_filter: all
-          plugin_habits: yes
-          plugin_habits_days: 30
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
-          plugin_lines: yes
-          plugin_lines_history_limit: 2
+          plugin_skyline_frames: 6
+          plugin_skyline_quality: 1
+          delay: 120
 
   snake:
     runs-on: ubuntu-latest
